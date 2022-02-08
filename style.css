@@ -64,12 +64,30 @@ body{
     border-color: limegreen;
 }
 
-.form-control.success input {
-    border-color: limegreen;
-}
-
 .form-control.error input {
     border-color: red;    
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: limegreen;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
 }
 
 .form-control i {
@@ -78,12 +96,6 @@ body{
     right: 10px;
 }
 
-.form-control small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-}
 .form button {
     background-color: purple ;
     color: white;
